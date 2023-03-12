@@ -1,0 +1,9 @@
+.content > h1 {
+    color: var(--rich-black);
+}
+
+.content > p {
+    width: 40%;
+    line-height: 2;
+    color: var(--rich-black);
+}

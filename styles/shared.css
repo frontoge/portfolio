@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root {
+    --emerald: #3ddc97ff;
+    --rich-black: #031927ff;
+    --baby-blue: #9dd1f1ff;
+    --air-force-blue: #508aa8ff;
+    --umber: #6f5e53ff;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.navDiv {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    position: absolute;
+    padding: 0.25%;
+    height: 90%;
+    top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navDiv > h1 {
+    background-color: var(--rich-black);
+    color: var(--baby-blue);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    padding-top: 0.5em;
+    height: 25%;
+    padding-bottom: 0.5em;
+    /*border: 2px solid rgb(35, 35, 35)*/
+}
+
+.navBar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 75%;
+    margin: 0;
+    background-color: var(--rich-black);
+}
+
+.navBar > a {
+    position: relative;
+    background: none;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 7.5%;
+    color: var(--baby-blue);
+    text-decoration: none;
+    align-items: center;
+}
+
+.navBar > a:hover {
+    background-color: var(--air-force-blue);
+    color: white;
+}
