@@ -1,8 +1,7 @@
 .content {
-    left: 30%;
-    width: 40%;
-    padding-left: 3%;
-    padding-right: 3%;
+    left: 25%;
+    width: 50%;
+
     background-color: var(--baby-blue);
 }
 
@@ -11,7 +10,7 @@ h2 {
 }
 
 .content > p {
-    width: 100%;
+    width: 60%;
     line-height: 2;
     font-size: 13pt;
     color: var(--rich-black);
