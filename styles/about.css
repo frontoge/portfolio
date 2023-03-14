@@ -1,9 +1,37 @@
-.content > h1 {
+.content {
+    left: 30%;
+    width: 40%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: var(--baby-blue);
+}
+
+h2 {
     color: var(--rich-black);
 }
 
 .content > p {
-    width: 40%;
+    width: 100%;
     line-height: 2;
+    font-size: 13pt;
     color: var(--rich-black);
+
+}
+
+.content > img {
+    max-height: 25%;
+    margin: 2%;
+
+}
+
+#socials {
+    display: flex;
+    align-items: center;
+    width: 25%
+}
+
+svg {
+    left: 25%;
+    display: block;
+    position: relative;
 }

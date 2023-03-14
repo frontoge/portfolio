@@ -29,13 +29,14 @@ body {
 
 .content {
     position: absolute;
-    padding: 0.25%;
+    padding: 0;
     height: 90%;
     top: 10%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
 }
 
 .navDiv > h1 {
