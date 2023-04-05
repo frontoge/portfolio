@@ -1,0 +1,19 @@
+.nav {
+    gap: 7%;
+    display: flex;
+    position: absolute;
+    top: 86%;
+    font-size: 22pt;
+    width: 70%;
+    left: 46%;
+}
+
+a {
+    color: #CCCCCC;
+    text-decoration: none;
+    text-shadow: 2px 2px 0.5rem black;
+}
+a:hover {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 1rem black;
+}
