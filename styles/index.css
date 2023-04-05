@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'ModeNine';
+    src: url(../assets/fonts/Modenine-2OPd.ttf);
+}
+
+:root {
+
+}
+
+body {
+    color: #dddddd;
+    font-family: "ModeNine";
+}
+
+h1 {
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    font-size: 44pt;
+    text-shadow: 2px 2px 0.5rem black;
+    color: #eee
+}
+
+h2 {
+    position: absolute;
+    left: 18%;
+    top: 37%;
+    font-size: 22pt;
+    text-shadow: 2px 2px 0.5rem black;
+    color: #eee;
+}
+
+.nav {
+    gap: 7%;
+    display: flex;
+    position: absolute;
+    top: 5%;
+    font-size: 22pt;
+    width: 80%;
+    left: 10%;
+}
+
+a {
+    color: #CCCCCC;
+    text-decoration: none;
+    text-shadow: 2px 2px 0.5rem black;
+}
+a:hover {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 1rem black;
+}
+
+.footer {
+    background: black;
+    position: absolute;
+    bottom: 10%;
+    width: 50%;
+    height: 20%;
+    display: flex;
+    justify-content: right;
+}
+
+img {
+    max-height: 100%;
+}
