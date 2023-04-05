@@ -3,28 +3,35 @@
     src: url(../assets/fonts/Modenine-2OPd.ttf);
 }
 
-:root {
-
-}
 
 body {
-    color: #dddddd;
+    margin: 0;
+    position:absolute;
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../assets/bg.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: "ModeNine";
 }
 
 h1 {
     position: absolute;
-    left: 15%;
-    top: 25%;
+    left: 16%;
+    top: 36%;
     font-size: 44pt;
     text-shadow: 2px 2px 0.5rem black;
-    color: #eee
+    color: #eee;
 }
 
 h2 {
     position: absolute;
     left: 18%;
-    top: 37%;
+    top: 46%;
     font-size: 22pt;
     text-shadow: 2px 2px 0.5rem black;
     color: #eee;
@@ -34,10 +41,10 @@ h2 {
     gap: 7%;
     display: flex;
     position: absolute;
-    top: 5%;
+    top: 86%;
     font-size: 22pt;
-    width: 80%;
-    left: 10%;
+    width: 70%;
+    left: 46%;
 }
 
 a {
@@ -51,10 +58,10 @@ a:hover {
 }
 
 .footer {
-    background: black;
     position: absolute;
+    left: 10%;
     bottom: 10%;
-    width: 50%;
+    width: 30%;
     height: 20%;
     display: flex;
     justify-content: right;
@@ -62,4 +69,15 @@ a:hover {
 
 img {
     max-height: 100%;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    position: absolute;
+    bottom: 37%;
+    left: 18%;
+    font-size: 18pt;
+    gap: 1vh;
 }
