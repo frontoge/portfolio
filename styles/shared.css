@@ -1,10 +1,10 @@
 .nav {
-    gap: 7%;
+    gap: 10%;
     display: flex;
     position: absolute;
     top: 86%;
     font-size: 22pt;
-    width: 70%;
+    width: 50%;
     left: 46%;
 }
 
