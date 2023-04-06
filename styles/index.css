@@ -40,6 +40,25 @@ h2 {
     line-height: 125%;
 }
 
+#resume {
+    position: absolute;
+    border: 2px solid var(--seagreen);
+    bottom: 25vh;
+    left: 20vw;
+    padding: 0.5rem;
+    width: 7.5vw;
+    height: 5vh;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--spring-green);
+}
+
+#resume:hover {
+    background-color: var(--prussian-blue);
+    filter: brightness(1.2);
+}
 
 #about {
     position: absolute;
