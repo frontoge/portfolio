@@ -1,44 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body {
     margin: 0;
     position:absolute;
     width: 100vw;
     height:100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: url("../assets/bg.jpg");
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "ModeNine";
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+#intro {
+    position: absolute;
+    top: 26%;
+    left: 10.25%;
+    color: var(--spring-green);
+    font-weight: 300;
+    font-size: 27pt;
 }
 
 h1 {
     position: absolute;
-    left: 16%;
-    top: 36%;
-    font-size: 44pt;
+    left: 10%;
+    top: 25%;
+    font-size: 56pt;
     text-shadow: 2px 2px 0.5rem black;
-    color: #eee;
+    color: var(--lavender-blush);
 }
 
 h2 {
     position: absolute;
-    left: 18%;
-    top: 46%;
-    font-size: 22pt;
+    right: 50%;
+    top: 36%;
+    text-align: right;
+    width: 25%;
+    font-size: 28pt;
     text-shadow: 2px 2px 0.5rem black;
-    color: #eee;
+    color: var(--spring-green);
+    font-weight: 400;
+    line-height: 125%;
+}
+
+
+#about {
+    position: absolute;
+    width: 40vw;
+    /* border: 2px solid var(--seagreen); */
+    right: 3vw;
+    height: 75vh;
+    top: 20vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--lavender-blush);
+    border-radius: 3%;
+}
+
+#headshot {
+    width: 30%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid var(--seagreen);
+}
+
+#text {
+    text-align: center;
+    width: 75%;
+    line-height: 2rem;
+    font-size: 15pt;
+    font-weight: 400;
+    color: var(--lavender-blush);
+    margin-top: 7.5vh;
 }
 
 .links {
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 3vw;
     position: absolute;
-    bottom: 37%;
-    left: 18%;
+    top: 0;
+    left: 0;
+    height: 100vh;
     font-size: 18pt;
     gap: 1vh;
+    background: rgb(6 14 32);
+    justify-content: end;
+    align-items: center;
+}
+
+.links > a {
+    width: 55%;
+}
+
+img {
+    width: 100%;
+}
+
+.links > a > img:hover {
+    filter: brightness(1.5);
+}
+
+.vl {
+    height: 8vh;
+    border: 1px solid var(--spring-green);
 }

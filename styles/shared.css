@@ -1,25 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 @font-face {
-    font-family: 'ModeNine';
-    src: url(../assets/fonts/Modenine-2OPd.ttf);
+    font-family: 'LeagueSpartan';
+    src: url(../assets/fonts/LeagueSpartan-Bold.otf);
+}
+
+:root {
+    --prussian-blue: #172a3a;
+    --seagreen: #09814A;
+    --spring-green: #3EFF8B;
+    --carolina-blue: #74B3CE;
+    --lavender-blush: #FCEFEF;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, #0b1627, #0d1a2d, #0f1e34, #11223a, #132641);
 }
 
 .nav {
     gap: 10%;
     display: flex;
     position: absolute;
-    top: 86%;
-    font-size: 22pt;
-    width: 50%;
-    left: 46%;
-    font-family: 'ModeNine';
+    top: 5%;
+    font-size: 18pt;
+    width: 40%;
+    right: 0%;
+    justify-content: right;
+    font-family: "Josefin Sans", sans-serif;
+    margin-right: 3vw;
 }
 
 a {
-    color: #CCCCCC;
+    color: var(--lavender-blush);
     text-decoration: none;
-    text-shadow: 2px 2px 0.5rem black;
+    text-shadow: 2px 2px 0.25rem black;
+    font-weight: 500;
 }
-a:hover {
-    color: #FFFFFF;
+
+a:hover, .active {
+    color: var(--spring-green);
     text-shadow: 2px 2px 1rem black;
+    font-weight: 500;
 }
