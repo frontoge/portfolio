@@ -1,0 +1,92 @@
+#experience {
+    position: absolute;
+    top: 7vh;
+    left: 10vw;
+    display: flex;
+    flex-direction: column;
+    widtH: 40vw;
+    align-items: center;
+    height: 80vh;
+}
+
+.jobCard {
+ height: 50%;   
+}
+
+.jobCard > h2 {
+    font-weight: 500;
+    color: var(--spring-green);
+    margin-bottom: 0.5vh;
+}
+
+.jobCard > h3 {
+    color: var(--spring-green);
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 0.5vh;
+    padding-left: 0.4vw;
+}
+
+.jobCard > h4 {
+    margin-top: 0;
+    font-weight: 300;
+    padding-left: 0.5vw;
+}
+
+.stack {
+    height: 65%;
+}
+
+.stack > h3 {
+    padding-left: 0.4vw;
+}
+
+.chips {
+    width: 80%;
+    height: 70%;
+    position: relative;
+    left: 1%;
+    font-size: 12pt;
+}
+
+.chip {
+    color: var(--lavender-blush);
+    line-height: 2vh;
+    border-radius: 1rem;
+    display: inline-flex;
+    height: 15%;
+    text-align: center;
+    align-items: center;
+    width: auto;
+    padding: 1rem;
+    text-transform: none;
+    margin-bottom: 1rem;
+    margin-right: 0.15rem;
+    background: rgb(28 67 155);
+    background-image: linear-gradient(to right bottom, var(--spring-green), black);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+#education {
+    position: absolute;
+    border: 2px solid lightgreen;
+    right: 5vw;
+    top: 15vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+}
+
+#contact {
+    position: absolute;
+    right: 5vw;
+    border: 2px solid blue;
+    top: 60%;
+    width: 40vw;
+    height: 27vh;
+}
