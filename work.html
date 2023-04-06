@@ -3,31 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <title>Home</title>
-        <link href="styles/shared.css" rel="stylesheet">
-        <link href="styles/work.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <link href="./styles/shared.css" rel="stylesheet">
     </head>
     <body>
-        <div class="navDiv">
-            <h1>Work Experience</h1>
-            <hr/>
-            <nav class="navBar">
-                <a href="./index.html">About Me</a>
-                <a href="./work.html">Work History</a>
-                <a href="./projects.html">Past Projects</a>
-                <a href="./current.html">Current Projects</a>
-                <a href="./learning.html">Learning Log</a>
-            </nav>
-        </div>
         <div class="content">
-            <div class="card">
-                <h2>Job Title</h2>
-                <h3>Company</h3>
-                <h4>Start/Date - End/Date</h4>
-                <p>Description Text here with lots of information about the position. Filler words are here long text car and i ate my pet cat last weekend at the mall. Very scary monkeys stealing from the bank</p>
+            <div class="nav">
+                <a href="index.html">About Me</a>
+                <a href="projects.html">My Projects</a>
+                <a href="work.html" class="active">Work History</a>
+            </div>
+            <div class="links">
+                <a id="email" href="mailto:widenhousematthew@gmail.com"><img src="assets/icons/iconmonstr-email-1.svg" /></a>
+                <a id="github" href="https://github.com/frontoge"><img src="assets/icons/iconmonstr-github-1.svg" /></a>
+                <a id="linkedin" href="https://linkedin.com/in/mattwidenhouse"><img src="assets/icons/iconmonstr-linkedin-1.svg" /></a>
+                <a id="share" onclick="copyURL()"><img src="assets/icons/iconmonstr-share-9.svg" /></a>
+                <div class="vl"></div>
             </div>
         </div>
+        <script>function copyURL() {
+            navigator.clipboard.writeText("http://edenrp.net/frontoge");
+            alert("Copied URL to clipboard!");
+        }</script>
     </body>
 </html>

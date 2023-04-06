@@ -14,6 +14,15 @@
 
 }
 
+body {
+    margin: 0;
+    position:absolute;
+    width: 100vw;
+    height:100vh;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -48,4 +57,36 @@ a:hover, .active {
     color: var(--spring-green);
     text-shadow: 2px 2px 1rem black;
     font-weight: 500;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 3vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    font-size: 18pt;
+    gap: 1vh;
+    background: rgb(6 14 32);
+    justify-content: end;
+    align-items: center;
+}
+
+.links > a {
+    width: 55%;
+}
+
+img {
+    width: 100%;
+}
+
+.links > a > img:hover {
+    filter: brightness(1.5);
+}
+
+.vl {
+    height: 8vh;
+    border: 1px solid var(--spring-green);
 }

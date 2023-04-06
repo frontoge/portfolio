@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link href="styles/shared.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-</head>
-<body>
-<div class="navDiv">
-    <h1>Completed Projects</h1>
-    <hr/>
-    <nav class="navBar">
-        <a href="./index.html">About Me</a>
-        <a href="./work.html">Work History</a>
-        <a href="./projects.html">Past Projects</a>
-        <a href="./current.html">Current Projects</a>
-        <a href="./learning.html">Learning Log</a>
-    </nav>
-</div>
-<div class="content">
-    <p>
-        Some information about me.
-    </p>
-</div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <link href="./styles/shared.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="content">
+            <div class="nav">
+                <a href="index.html">About Me</a>
+                <a href="projects.html" class="active">My Projects</a>
+                <a href="work.html">Work History</a>
+            </div>
+            <div class="links">
+                <a id="email" href="mailto:widenhousematthew@gmail.com"><img src="assets/icons/iconmonstr-email-1.svg" /></a>
+                <a id="github" href="https://github.com/frontoge"><img src="assets/icons/iconmonstr-github-1.svg" /></a>
+                <a id="linkedin" href="https://linkedin.com/in/mattwidenhouse"><img src="assets/icons/iconmonstr-linkedin-1.svg" /></a>
+                <a id="share" onclick="copyURL()"><img src="assets/icons/iconmonstr-share-9.svg" /></a>
+                <div class="vl"></div>
+            </div>
+        </div>
+        <script>function copyURL() {
+            navigator.clipboard.writeText("http://edenrp.net/frontoge");
+            alert("Copied URL to clipboard!");
+        }</script>
+    </body>
 </html>
