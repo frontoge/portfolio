@@ -121,13 +121,30 @@
 
 #contact {
     position: absolute;
-    right: 5vw;
-    border: 2px solid blue;
-    top: 60%;
+    top: 65%;
+    left: 30vw;
     width: 40vw;
     height: 27vh;
+    margin: auto;
+    display: block;
 }
 
 #contact > h1 {
-    text-align: right;
+    text-align: center;
+}
+
+#phone {
+    text-align: center;
+    font-weight: 300;
+    color: var(--spring-green);
+    margin-top: 4vh;
+    margin-bottom: 1vh;
+}
+
+#emailText {
+    color: var(--spring-green);
+    margin-top: 0;
+    text-align: center;
+    font-weight: 300;
+    text-transform: lowercase;
 }
