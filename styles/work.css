@@ -1,150 +1,49 @@
-#experience {
-    position: absolute;
-    top: 15vh;
-    left: 10vw;
-    display: flex;
-    flex-direction: column;
-    widtH: 40vw;
-    align-items: center;
-    height: 80vh;
-}
-
-.jobCard {
- height: 50%;   
-}
-
-.jobCard > h2 {
-    font-weight: 500;
-    color: var(--spring-green);
-    margin-bottom: 0.5vh;
-}
-
-.jobCard > h3 {
-    color: var(--lavender-blush);
-    font-weight: 400;
-    margin-top: 0px;
-    margin-bottom: 0.5vh;
-    padding-left: 0.4vw;
-}
-
-.jobCard > h4 {
-    margin-top: 0;
+.prefaceText {
     font-weight: 300;
-    padding-left: 0.5vw;
+    color: var(--spring-green);
+    font-size: 20pt;
 }
 
-.stack {
-    height: 65%;
+#current {
+    position: absolute;
+    left: 10vw;
+    top: 15vh;
+    width: 35vw;
 }
 
-.stack > h3 {
-    padding-left: 0.4vw;
+#current h1 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    text-shadow: 2px 2px 0.5rem black;
+    font-size: 50pt;
 }
 
-.chips {
-    width: 80%;
-    height: 70%;
-    position: relative;
-    left: 1%;
-    font-size: 12pt;
+#current h2 {
+    margin-top: 0;
+    text-align: right;
+    color: var(--spring-green);
+    text-shadow: 2px 2px 0.5rem black;
+    font-weight: 400;
+    font-size: 22pt;
+    margin-right: 2%;
 }
 
-.chip {
-    color: var(--lavender-blush);
-    line-height: 2vh;
-    border-radius: 1rem;
-    display: inline-flex;
-    height: 15%;
-    text-align: center;
-    align-items: center;
-    width: auto;
-    padding: 0.5rem;
-    text-transform: none;
-    margin-bottom: 1rem;
-    margin-right: 0.15rem;
-    background: rgb(28 67 155);
-    background-image: linear-gradient(to right bottom, var(--spring-green), black);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+#aboutWork {
+    font-size: 15pt;
+    text-align: inherit;
+    line-height: 2rem;
 }
-
 
 #education {
-    position: absolute;
-    right: 5vw;
-    top: 15vh;
-    width: 40vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 40vh;
-}
-
-.schoolCard {
-    width: 90%;
-}
-
-.schoolCard > h2 {
-    color: var(--spring-green);
-    margin-bottom: 0;
-    font-weight: 500;
-    font-size: 18pt;
-}
-
-.schoolCard > h3 {
-    margin-top: 0.5%;
-    padding-left: 0.5rem;
-    font-weight: 400;
-    margin-bottom: 0;
-}
-
-.schoolCard > h4 {
-    margin-top: 0.25rem;
-    padding-left: 0.6rem;
-    font-weight: 300;
-    color: var(--lavender-blush);
-}
-
-.courseLabel {
-    color: var(--spring-green);
-}
-
-.courseList {
-    margin-top: 0.5rem;
-}
-
-.courseList li {
-    font-size: 15pt;
-    margin-bottom: 0.5rem;
+    display: none;
 }
 
 #contact {
-    position: absolute;
-    top: 65%;
-    left: 30vw;
-    width: 40vw;
-    height: 27vh;
-    margin: auto;
-    display: block;
+    display: none;
 }
 
-#contact > h1 {
-    text-align: center;
-}
-
-#phone {
-    text-align: center;
-    font-weight: 300;
-    color: var(--spring-green);
-    margin-top: 4vh;
-    margin-bottom: 1vh;
-}
-
-#emailText {
-    color: var(--spring-green);
-    margin-top: 0;
-    text-align: center;
-    font-weight: 300;
-    text-transform: lowercase;
+#oduImg {
+    max-width: 40%;
+    border: 2px solid var(--spring-green);
+    border-radius: 50%;
 }
