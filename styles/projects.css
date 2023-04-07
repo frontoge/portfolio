@@ -1,0 +1,84 @@
+#container {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 15%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.card {
+    background: var(--prussian-blue);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    filter: brightness(1.2);
+}
+
+.card:hover .desc, .card:hover .footer {
+    color: var(--lavender-blush);
+}
+
+.icon {
+    margin-top: 1rem;
+    max-height: 30%;
+    height: 30%;
+    aspect-ratio: 1;
+    width: auto;
+}
+
+.title {
+    margin-bottom: 0.5rem;
+    color: var(--spring-green);
+    margin-top: 1rem;
+    text-shadow: 2px 2px 0.5rem black;
+}
+
+.desc {
+    margin-top: 0;
+    height: 30%;
+    width: 80%;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.footer h2 {
+    font-weight: 300;
+    font-size: 14pt;
+}
+
+.date {
+    margin-bottom: 0;
+    width: 100%;
+    margin-left: 5%;
+}
+
+.type {
+    margin-bottom: 0;
+    width: 100%;
+    text-align: right;
+    margin-right: 5%;
+}
+
+/*Projects positioning*/
+#eden {
+    grid-column: 2 / 3;
+    grid-row: 1 / span 2;
+}
+
+#eden p {
+    height: 51%;
+}

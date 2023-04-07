@@ -43,7 +43,8 @@
     width: 41vw;
     right: 7.5vw;
     position: absolute;
-    top: 22vh;
+    top: 30vh;
+    height: 60%;
 }
 
 #education h1 {
@@ -54,19 +55,20 @@
 }
 
 #education h2 {
-    margin-top: 0;
-    text-align: right;
+    margin-top: 4rem;
+    text-align: center;
     color: var(--spring-green);
     text-shadow: 2px 2px 0.5rem black;
-    font-weight: 400;
-    font-size: 24pt;
+    font-weight: 500;
+    font-size: 29pt;
     margin-right: 2%;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
 }
 
 #educationContent {
     display: flex;
-    height: 25vh;
+    height: 31vh;
+    margin-top: 2rem;
 }
 
 #degreeInfo {
@@ -89,23 +91,28 @@
     margin-left: 0.5vw;
 }
 
+#ed-header {
+    display: flex;
+    height: 29%;
+    position: relative;
+    align-items: center;
+    gap: 5rem;
+}
+
+#oduImg {
+    border: 2px solid var(--spring-green);
+    border-radius: 50%;
+    max-height: 100%;
+}
+
 figure {
     display: flex;
     flex-direction: column;
     align-items: center;
     left: 5%;
     position: relative;
-}
-
-#contact {
-    display: none;
-}
-
-#oduImg {
-    border: 2px solid var(--spring-green);
-    border-radius: 50%;
-    max-height: 40vh;
-    margin-top: 5vh;
+    height: 100%;
+    max-height: 100%;
 }
 
 figcaption {
