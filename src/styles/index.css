@@ -9,7 +9,7 @@
     font-size: 27pt;
 }
 
-h1 {
+#aboutHeader {
     position: absolute;
     left: 10%;
     top: 25%;
@@ -18,7 +18,7 @@ h1 {
     color: var(--lavender-blush);
 }
 
-h2 {
+#aboutSubHeader {
     position: absolute;
     right: 50%;
     top: 36%;
@@ -39,7 +39,7 @@ h2 {
     padding: 0.5rem;
     width: 7.5vw;
     height: 5vh;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +75,7 @@ h2 {
 
 #text {
     text-align: center;
-    width: 75%;
+    width: 85%;
     line-height: 2rem;
     font-size: 16pt;
     font-weight: 400;
