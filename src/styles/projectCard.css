@@ -1,0 +1,79 @@
+
+:root {
+    --prussian-blue:rgb(6 14 32);
+    --dark-blue: rgb(12, 28, 64);
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    height: 20%;
+    padding: 1rem;
+    
+    border-radius: 0.5rem;
+    background: var(--prussian-blue);
+    box-shadow: var(--card-shadow);
+}
+
+.icon {
+    aspect-ratio: 1;
+    width: auto;
+    height: 75%;
+    margin: auto;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.card-content > p {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+.card-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 20%;
+    height: 10%;
+    align-self: end;
+}
+
+.card-link > img {
+    height: 100%;
+    color: white;
+    width: auto;
+}
+
+.card-link > a {
+    margin-top: 0.25rem;;
+}
+
+.card-tags {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    row-gap: 0.25rem;
+    align-content: end;
+}
+
+.card-pill {
+    border-radius: 0.5rem;
+    height: 12.5%;
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    color: white;
+    font-size: 12pt;
+}
