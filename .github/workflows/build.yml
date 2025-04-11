@@ -1,0 +1,49 @@
+name: Build and Deploy
+
+on: 
+  pull_request:
+    branches: [release]
+  push:
+    branches: [release]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build project
+        run: bun run build
+
+      - name: Archive build artifacts
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: dist/
+          retention-days: 1
+  
+  deploy:
+    runs-on: self-hosted
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/release'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build project
+        run: bun run build
+
+      - name: Deploy to Apache
+        run: |
+          rm -rf /var/www/widenhouse.dev/html/*
+          cp -r dist/* /var/www/widenhouse.dev/html/
+          chown -R github-runner:github-runner /var/www/widenhouse.dev/html
+          chmod -R 755 /var/www/widenhouse.dev/html
